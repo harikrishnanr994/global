@@ -1,0 +1,229 @@
+/**
+ * File Name: responsive.css
+ */
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 01 ) - Responsive Specifications
+ *	-------------------------------------------------------------------------------
+ *
+ *  This part contains the responsive modifications for small devices widths
+ *
+ *	------
+ *
+ *  It has the following code:
+ *
+ *	   |
+ *	   |-->  [ 01 ] - Width From 1200px to 0
+ *	   |-->  [ 02 ] - Width From 992px to 0
+ *	   |-->  [ 03 ] - Width From 768px to 0
+ *	   |-->  [ 04 ] - Width From 480px to 0
+ *	   |-->  [ 05 ] - Width From 320px to 0
+ *	   |-->  [ 06 ] - Height Form 768px to 0
+ *	   |-->  [ 05 ] - Height Form Maximmum to 768px
+ *	   |-->  [ 08 ] - Height Form Maximmum to 900px
+ *
+ */
+/*  [ 01 ] - Width From 1200px to 0
+ ===================================== */
+@media (max-width: 1200px) {
+  /* Boxed Width */
+  body.boxed #full-container {
+    margin: 0;
+    border-radius: 0; }
+  /* Header */
+  #header {
+    text-align: left; }
+    #header .container,
+    #header .row,
+    #header [class*="col-"] {
+      height: initial; }
+    #header,
+    #header #header-wrap {
+      height: auto;
+      min-height: 80px; }
+    #header #header-wrap {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10; }
+    #header .header-meta {
+      height: 80px;
+      border-left: none;
+      margin-left: 0; }
+  .main-menu {
+    left: 0;
+    display: none; }
+  #mobile-menu .mobile-menu {
+    text-align: left; }
+  .mobile-menu-btn {
+    display: inline-block; }
+  /* Banner Slider */
+  .banner-slider .owl-nav [class*="owl-"] {
+    margin-top: -10px !important; }
+  /* Signup Form 1 */
+  .box-signup-form.bs-form-2 #signup-form-1 input[type="text"] {
+    width: 180px; } }
+
+/*  [ 02 ] - Width From 992px to 0
+ ==================================== */
+@media (max-width: 992px) {
+  /* Column With Helper Classes Optimization */
+  [class*="col-"][class*="pl-"] {
+    padding-left: 15px; }
+  [class*="col-"][class*="pr-"] {
+    padding-right: 15px; }
+  /* Banner Parallax */
+  .banner-parallax,
+  .banner-parallax .row > [class*="col-"] {
+    height: auto !important;
+    min-height: auto !important; }
+  .banner-parallax .row {
+    flex-direction: column;
+    min-height: 600px; }
+  .banner-parallax .row > [class*="col-"] {
+    align-self: stretch;
+    flex-grow: 1; }
+  .banner-parallax [class*="col-"]:not(:first-child) .banner-center-box {
+    padding-top: 0;
+    margin-top: -30px; }
+  .slide-content,
+  .banner-center-box {
+    position: initial; }
+  .banner-center-box {
+    display: block;
+    top: 0;
+    width: 100%;
+    padding-top: 180px;
+    transform: translateY(0); }
+  /* Slider */
+  .fullscreen {
+    height: auto !important; }
+  .banner-slider {
+    min-height: auto !important; }
+  /* Signup Form 1 */
+  .box-signup-form.bs-form-1 {
+    width: 65%; }
+  .box-signup-form.bs-form-2 {
+    width: 100%; }
+    .box-signup-form.bs-form-2 #signup-form-1 {
+      margin-bottom: -15px; }
+      .box-signup-form.bs-form-2 #signup-form-1 .form-group {
+        float: none;
+        margin-bottom: 15px;
+        width: calc(50%); }
+        .box-signup-form.bs-form-2 #signup-form-1 .form-group:nth-child(even) {
+          padding-right: 0; }
+        .box-signup-form.bs-form-2 #signup-form-1 .form-group:last-child {
+          float: none; }
+      .box-signup-form.bs-form-2 #signup-form-1 input[type="text"] {
+        width: 100%; }
+  /* Split Section */
+  .split-section .section-img-wrap {
+    position: relative; }
+  .split-section .section-content {
+    padding-left: 0; }
+  /* Page Title */
+  #page-title {
+    text-align: center; }
+    #page-title .breadcrumb {
+      position: initial;
+      margin-top: 20px; }
+  /* Footer Mini */
+  /* Scroll Top */
+  .scroll-top-icon {
+    display: none !important; } }
+
+/*  [ 03 ] - Width From 768px to 0
+==================================== */
+@media (max-width: 768px) {
+  /* Banner Parallax */
+  .banner-parallax .row {
+    min-height: 500px; }
+  .slide-content h1 {
+    font-size: 35px; }
+  /* Signup Form 1 */
+  .box-signup-form.bs-form-1 {
+    width: 80%; }
+  .box-signup-form.bs-form-2 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+    .box-signup-form.bs-form-2 #signup-form-1 {
+      display: block; }
+      .box-signup-form.bs-form-2 #signup-form-1 .form-group {
+        margin-bottom: 15px;
+        padding-right: 0;
+        width: 100%; }
+        .box-signup-form.bs-form-2 #signup-form-1 .form-group:nth-child(even) {
+          margin-right: 15px; }
+        .box-signup-form.bs-form-2 #signup-form-1 .form-group:last-child {
+          float: none; }
+      .box-signup-form.bs-form-2 #signup-form-1 input[type="text"] {
+        width: 100%; }
+  /* Popup Preview */
+  .popup-preview .container {
+    width: 100%; }
+  /* Fun Facts */
+  .fun-facts-boxes .box-counter {
+    width: 50%; }
+    .fun-facts-boxes .box-counter:nth-child(1), .fun-facts-boxes .box-counter:nth-child(2) {
+      border-bottom: 1px solid #eaeaea; }
+  /* Our Services */
+  #our-services .section-content.pb-0 {
+    padding-bottom: 170px !important; }
+  /* Watch Video */
+  #watch-video .video-preview {
+    height: 350px; }
+  /* CTA Title 1 */
+  #cta-title-1 .box-cta {
+    padding: 90px 80px; }
+    #cta-title-1 .box-cta [class*="shape-"] {
+      display: none; } }
+
+/*  [ 04 ] - Width From 480px to 0
+==================================== */
+@media (max-width: 480px) {
+  /* Header */
+  .header-meta {
+    padding: 0; }
+  .mobile-menu-btn {
+    margin-right: 0 !important; }
+  .header-btn {
+    display: none; }
+  /* Bannar Parallax */
+  .signup-form input[type="email"] {
+    width: 180px; }
+  /* Banner Slider */
+  .slide-content h1 {
+    font-size: 30px;
+    line-height: 45px; }
+  /* Signup Form 1 */
+  .box-signup-form.bs-form-1, .box-signup-form.bs-form-2 {
+    width: 100%; }
+  /* Section Title */
+  .section-title h2 {
+    font-size: 26px; }
+  /* Fun Facts */
+  .fun-facts-boxes .box-counter {
+    width: 100%;
+    border-bottom: 1px solid #eaeaea; }
+    .fun-facts-boxes .box-counter:last-child {
+      border-bottom: none; }
+  /* Watch Video */
+  #watch-video .video-preview {
+    height: 250px; }
+  /* Our Services */
+  /* Style Switcher */
+  .style-switcher {
+    display: none !important; } }
+
+/*  [ 05 ] - Width From 320px to 0
+==================================== */
+/*  [ 06 ] - Height From 768px to 0
+===================================== */
+/*  [ 07 ] - Height From Maximmum to 768px
+============================================ */
+/*  [ 08 ] - Height From Maximmum to 900px
+============================================ */
