@@ -11072,7 +11072,8 @@ input[type="submit"].form-control:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px; }
+  height: 60px;
+  margin: 10px;}
   .client-single img {
     position: relative;
     width: auto !important; }
