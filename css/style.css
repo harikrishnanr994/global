@@ -11073,10 +11073,12 @@ input[type="submit"].form-control:focus {
   align-items: center;
   justify-content: center;
   height: 60px;
+  margin-top: 50px;
   }
   .client-single img {
     position: relative;
-    width: auto !important; }
+    width: 150px !important;
+    }
 
     .container1 {
        position: relative;
